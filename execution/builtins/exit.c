@@ -40,8 +40,8 @@ int	ft_exit(char **args)
 		}
 		if (args[2])
 		{
-			return (ft_putstr_fd("minishell: exit: too many \
-				arguments\n", 2), 1);
+			ft_putstr_fd("minishell: exit: too many arguments\n", 2);
+			return (1);
 		}
 	}
 	ft_exit_withclear(exit_code);
